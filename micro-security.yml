@@ -1,0 +1,21 @@
+server:
+  port: 8010
+
+logging:
+  level:
+    org.hibernate.SQL: debug
+
+spring:
+  datasource:
+    url: jdbc:mysql://mysql-aforo255:3306/db_seguridad?serverTimezone=America/Lima&allowPublicKeyRetrieval=true&useSSL=false&createDatabaseIfNotExist=true
+    username: root
+    password: cascade
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+        enable_lazy_load_no_trans: true
