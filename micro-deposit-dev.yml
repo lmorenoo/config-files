@@ -3,6 +3,7 @@ server:
 
 spring:
   kafka:
+    bootstrap-servers: kafka-aforo255:29092
     template:
       default-topic: transaction-events
     producer:
