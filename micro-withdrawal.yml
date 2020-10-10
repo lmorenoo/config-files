@@ -1,5 +1,5 @@
 server:
-  port: 8006
+  port: 8007
 
 spring:
   kafka:
@@ -18,6 +18,10 @@ spring:
     database-platform: org.hibernate.dialect.PostgreSQL95Dialect
     hibernate:
       ddl-auto: create
+  redis:
+    host: redis-aforo255
+    port: 6379
+
 
 logging:
   level:

@@ -1,0 +1,20 @@
+server:
+  port: 8002
+
+spring:
+  kafka:
+    template:
+      default-topic: transaction-events
+    consumer:
+      group-id: transaction-event-historical
+      bootstrap-server: kafka-aforo255:9092
+      key-deserializer: org.apache.kafka.common.serialization.IntegerDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+  data:
+    mongodb:
+      host: mongo-aforo255
+      port: 27017
+      database: historical
+      username: root
+      password: password
+      authentication-database: admin

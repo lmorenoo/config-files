@@ -1,0 +1,32 @@
+server:
+  port: 8008
+
+spring:
+  kafka:
+    template:
+      default-topic: transaction-events
+    consumer:
+      group-id: transaction-event-account
+      bootstrap-server: kafka-aforo255:9092
+      key-deserializer: org.apache.kafka.common.serialization.IntegerDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+  datasource:
+    url: jdbc:sqlserver://sqlserver2019;databaseName=db_account
+    username: sa
+    password: 1a.2b.3c.
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+  jpa:
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.SQLServer2012Dialect
+        format_sql: true
+
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: debug
