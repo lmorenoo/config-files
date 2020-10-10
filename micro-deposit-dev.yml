@@ -6,7 +6,7 @@ spring:
     template:
       default-topic: transaction-events
     producer:
-      bootstrap-server: http://kafka-aforo255:9092
+      bootstrap-server: kafka-aforo255:29092
       key-serializer: org.apache.kafka.common.serialization.IntegerSerializer
       value-serializer: org.apache.kafka.common.serialization.StringSerializer
   datasource:
