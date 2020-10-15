@@ -18,7 +18,7 @@ spring:
     hibernate:
       ddl-auto: create
   redis:
-    host: redis-aforo255
+    host: http://redis-aforo255
     port: 6379
     
 logging:
