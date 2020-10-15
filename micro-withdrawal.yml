@@ -21,7 +21,6 @@ spring:
     host: redis-aforo255
     port: 6379
 
-
 logging:
   level:
     root: INFO
