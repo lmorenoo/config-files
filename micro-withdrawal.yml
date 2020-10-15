@@ -3,12 +3,11 @@ server:
 
 spring:
   kafka:
+    bootstrap-servers: kafka-aforo255:29092
     template:
       default-topic: transaction-events
     producer:
       bootstrap-server: kafka-aforo255:9092
-      key-serializer: org.apache.kafka.common.serialization.IntegerSerializer
-      value-serializer: org.apache.kafka.common.serialization.StringSerializer
   datasource:
     url: jdbc:postgresql://postgres-aforo255:5432/db_account
     username: root

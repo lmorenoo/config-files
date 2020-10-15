@@ -3,13 +3,12 @@ server:
 
 spring:
   kafka:
+    bootstrap-servers: kafka-aforo255:29092
     template:
       default-topic: transaction-events
     consumer:
       group-id: transaction-event-historical
       bootstrap-server: kafka-aforo255:9092
-      key-deserializer: org.apache.kafka.common.serialization.IntegerDeserializer
-      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
   data:
     mongodb:
       host: mongo-aforo255
