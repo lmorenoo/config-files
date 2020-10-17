@@ -17,5 +17,3 @@ spring:
       username: root
       password: password
       authentication-database: admin
-  zipkin:
-    base-url: http://zipkin:9011 
