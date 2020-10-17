@@ -4,22 +4,12 @@ server:
 zuul:
   routes:
     historical:
-      service-id: micro-historical
-      path: /api/historical/**
       url: http://micro-historical-aforo255:8002
     deposit:
-      service-id: micro-deposit
-      path: /api/deposit/**
       url: http://micro-deposit-aforo255:8006
     withdrawal:
-      service-id: micro-withdrawal
-      path: /api/withdrawal/**
       url: http://micro-withdrawal-aforo255:8007
     account:
-      service-id: micro-account
-      path: /api/account/**
       url: http://micro-account-aforo255:8008
     security:
-      service-id: micro-security
-      path: /api/security/**
       url: http://micro-security-aforo255:8010
