@@ -21,7 +21,7 @@ spring:
     hostName: redis-aforo255
     port: 6379
   zipkin:
-    base-url: zipkin:9094    
+    base-url: http://zipkin:9011
     
 logging:
   level:

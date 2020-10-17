@@ -20,4 +20,4 @@ spring:
         dialect: org.hibernate.dialect.MySQL5Dialect
         enable_lazy_load_no_trans: true
   zipkin:
-    base-url: zipkin:9094
+    base-url: http://zipkin:9011

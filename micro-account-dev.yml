@@ -24,7 +24,7 @@ spring:
         dialect: org.hibernate.dialect.SQLServer2012Dialect
         format_sql: true
   zipkin:
-    base-url: zipkin:9094
+    base-url: http://zipkin:9011
 
 logging:
   level:
