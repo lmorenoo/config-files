@@ -4,7 +4,7 @@ server:
 zuul:
   routes:
     historical:
-      url: http://micro-historical-aforo255:8002
+      url: http://micro-historical-aforo255:8002/historical
     deposit:
       url: http://micro-deposit-aforo255:8006
     withdrawal:
