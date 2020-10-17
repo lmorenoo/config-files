@@ -5,5 +5,8 @@ spring:
 config:
   security:
     oauth:
+      client:
+        id: webAngular
+      secret: 123456
       jwt:
         key: 123456
