@@ -13,3 +13,7 @@ zuul:
       url: http://micro-account-aforo255:8008/accounts
     security:
       url: http://micro-security-aforo255:8010
+
+spring:
+  zipkin:
+    base-url: zipkin:9094
